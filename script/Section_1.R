@@ -6,7 +6,7 @@
 
 #Load libraries and data ----
 
-library(tidyverse)  #for data manipulation and visualisation
+library(tidyverse)  #for data manipulation and visualization
 
 inga<- read.csv("data/Inga_traits.csv")
 
@@ -21,6 +21,6 @@ inga<- read.csv("data/Inga_traits.csv")
   
 # PART b
 inga<- mutate(inga, log(Leaf_Area)) #log leaf areas
-leaf_hist_3<- hist(inga$log(Leaf_Area), breaks = 37)
+(leaf_hist_3<- hist(inga$log(Leaf_Area), breaks = 37))
 
   
