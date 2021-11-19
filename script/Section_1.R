@@ -21,6 +21,7 @@ inga<- read.csv("data/Inga_traits.csv")
   
 # PART b
 inga<- mutate(inga, log(Leaf_Area)) #log leaf areas
-(leaf_hist_3<- hist(inga$log(Leaf_Area), breaks = 37))
+
+leaf_hist_3<- hist(inga$`log(Leaf_Area)`, breaks = 37)
 
   
